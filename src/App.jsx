@@ -50,7 +50,7 @@ function App() {
       <div className='mantra' >हरे कृष्ण हरे कृष्ण<br/>कृष्ण कृष्ण हरे हरे<br/>हरे राम हरे राम<br/>राम राम हरे हरे</div>
       <center className='box'>
          
-         <div className='elements'><div>Rounds chanted:</div> {data.roundsChanted}</div>
+         <div className='elements'><div>Rounds chanted:</div> {data.roundsChanted} ({parseFloat((data.roundsChanted/324075)*100).toFixed(2)}%)</div>
          <div className='elements'><div>Remaing rounds:</div> {data.roundsRemaining}</div>
          <div className='elements'>
           <input className='inputBox' type="number" value={rounds || ''} placeholder={`Enter today's rounds`} onChange={(event)=>{setRounds(event.target.value)}}/>
