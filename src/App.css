@@ -27,6 +27,14 @@
 
 }
 
+.elements{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items:center ;
+  justify-content:space-between;
+}
+
 .box{
   background-color: white;
   height: 25vh;
@@ -43,34 +51,15 @@
   justify-content: space-evenly;
 }
 
-.count{
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
- 
-}
-.countButton{
-  background-color: #663d28;
-  color: white;
-  border: none;
+.inputBox{
+
+  border: 1px solid #663d28;
   border-radius: 5px;
-  width: 30px;
-  padding: 10px;
-  font-weight: 400;
-  /* font-size: 100%; */
+  font-size: large;
+  height: 40px;
+  width: 60%;
 }
-.countButton:disabled{
-  background-color: #663d28af;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  width: 30px;
-  padding: 10px;
-  font-weight: 400;
-  /* font-size: 100%; */
-}
+
 
 .resetButton{
   background-color: #663d28;
@@ -78,7 +67,7 @@
   padding: 10px;
   border: none;
   border-radius: 5px;
-  width: 40%;
+  width: 35%;
   font-size: 80%;
 }
 body{

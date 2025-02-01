@@ -1,3 +1,14 @@
 *{
   box-sizing: border-box;
 }
+
+html{
+  -webkit-tap-highlight-color: transparent;
+}
+
+input:-webkit-autofill{
+
+  background-color: transparent !important; /* Set your desired background color */
+  color: #663d28 !important; /* Ensure text color is visible */
+  transition: background-color 5000s ease-in-out 0s; /* Workaround to ensure background color stays consistent */
+}
