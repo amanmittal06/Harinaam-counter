@@ -19,9 +19,9 @@ function App() {
   }
 
   const updateData = async () =>{
-    let input =  prompt(`You are adding ${rounds}?\nWrite 'yes' to confirm.`)
+    let input =  rounds? prompt(`You are adding ${rounds}?\n\nWrite 'yes' to confirm!`): alert('Please enter rounds');
 
-    if(input=='yes' || input=='Yes' || input=='YES'){
+    if(rounds && (input=='yes' || input=='Yes' || input=='YES')){
       let newData = {...data, roundsChanted: data.roundsChanted + Number(rounds), roundsRemaining: data.roundsRemaining - Number(rounds)}
       try{
         await axios.patch(`https://gyf-backend.vercel.app/chantingCounts/${data._id}`, newData);
